@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="file" href="business-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="App">
+        <input class="input display" type="text" id="display" name="input" maxlength="40">
+        <div class="buttons">
+            <button class="btn" onclick="showDisplay('1')">1</button>
+            <button class="btn" onclick="showDisplay('2')">2</button>
+            <button class="btn" onclick="showDisplay('3')">3</button>
+            <button class="btn highlight" onclick="showDisplay('/')">/</button><br>
+            <button class="btn" onclick="showDisplay('4')">4</button>
+            <button class="btn" onclick="showDisplay('5')">5</button>
+            <button class="btn" onclick="showDisplay('6')">6</button>
+            <button class="btn highlight" onclick="showDisplay('*')">x</button><br>
+            <button class="btn" onclick="showDisplay('7')">7</button>
+            <button class="btn" onclick="showDisplay('8')">8</button>
+            <button class="btn" onclick="showDisplay('9')">9</button>
+            <button class="btn highlight" onclick="showDisplay('+')">+</button><br>
+            <button class="btn" onclick="showDisplay('0')">0</button>
+            <button class="btn" onclick="showDisplay('.')">.</button>
+            <button class="btn" onclick="calculate()">=</button>
+            <button class="btn highlight" onclick="showDisplay('-')">-</button><br>
+            <button class="btn highlight Clear" onclick="removeDisplay()">Clear</button>
+            <button class="btn highlight Del" onclick="showDisplay('')">Del</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
